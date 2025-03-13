@@ -1,0 +1,187 @@
+/* styles.css - Enhanced UI with Drag & Drop */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+/* Main Container */
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  min-width: 600px;
+  max-width: 900px;
+  background: white;
+  padding: 20px;
+  padding-top: 40px;  /* Add internal spacing */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 80px; /* Increase top margin */
+  position: relative;
+}
+
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Upload Area */
+.upload-area {
+  width: 100%;
+  height: 150px;
+  border: 2px dashed #6a11cb;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  color: #333;
+  background: #f9f9f9;
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+
+.upload-area:hover, .drag-active {
+  background: #e0e0e0;
+}
+
+/* Upload Text */
+.upload-text {
+  font-size: 16px;
+  color: #007bff;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-selected {
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* Summary Type Selection */
+.summary-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.summary-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.summary-dropdown {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #6a11cb;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* Upload Button */
+.upload-button {
+  background-color: #ff3e6c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.upload-button:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+.upload-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+
+/* Summary Section */
+.summary-section {
+  text-align: left;
+  margin-top: 20px;
+  padding: 20px;
+  background: #f4f4f4;
+  color: #333;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+  max-height: 500px;  /* Set max-height to allow scrolling */
+  overflow-y: auto;  /* Enable scrolling if content exceeds height */
+  white-space: normal; /* Allow proper word wrapping */
+  word-wrap: break-word; /* Ensure long words wrap */
+}
+
+
+/* Summary Text */
+.summary-text {
+  background: #eef;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap; /* Ensures proper line breaks */
+  word-wrap: break-word; /* Breaks words if too long */
+  overflow-wrap: break-word; /* Prevents text overflow */
+}
+
+
+/* Questions Section */
+.questions-section {
+  text-align: left;
+  margin-top: 20px;
+  padding: 15px;
+  background: #e3f2fd;
+  color: #333;
+  border-radius: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Bullet Points for Questions */
+.question-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    min-width: unset;
+  }
+}
