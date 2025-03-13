@@ -1,2 +1,3 @@
 # smartstudy-mini
  
+SmartStudy AI stands out for its integration of advanced technologies into a multilingual study assistant. Leveraging T5 for summarization and question generation, along with BERT for answer generation, it combines automated Q&A, concept extraction, real-time translation, and video recommendations into a unified, multimodal learning solution. By addressing challenges like information overload and language barriers, it ensures accessible, efficient, and impactful academic learning for diverse users.
