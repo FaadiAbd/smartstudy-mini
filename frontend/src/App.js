@@ -6,6 +6,7 @@ const App = () => {
   const [file, setFile] = useState(null);
   const [summary, setSummary] = useState("");
   const [questions, setQuestions] = useState([]);
+  const [answers, setAnswers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [summaryType, setSummaryType] = useState("short");
   const fileInputRef = useRef(null);
@@ -30,8 +31,7 @@ const App = () => {
       console.log("API Response:", response.data);
       setSummary(response.data.summary);
       setQuestions(response.data.questions);
-  
-      // 🔹 Scroll to top to make sure the upload area is visible
+      setAnswers(response.data.answers);
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (error) {
       console.error("Upload error:", error.response ? error.response.data : error);
@@ -41,7 +41,6 @@ const App = () => {
     }
   };
   
-
   return (
     <div className="container">
       <h1 className="title">SmartStudy AI</h1>
@@ -80,6 +79,18 @@ const App = () => {
           </ul>
         </div>
       )}
+      {answers.length >0 && (
+        <div className="questions-section">
+        <h2 className="subtitle">Generated Answers</h2>
+        <ul className="question-list">
+          {answers.map((q, index) => (
+            <li key={index}>{q}</li>
+          ))}
+        </ul>
+      </div>
+      )
+
+      }
     </div>
   );
 };

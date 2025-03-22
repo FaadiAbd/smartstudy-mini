@@ -1,4 +1,3 @@
-/* styles.css - Enhanced UI with Drag & Drop */
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to right, #6a11cb, #2575fc);
@@ -12,28 +11,24 @@ body {
   padding: 0;
 }
 
-/* Main Container */
-/* Main Container */
-/* Main Container */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 80%;
-  min-width: 600px;
+  min-width: 500px;
   max-width: 900px;
   background: white;
   padding: 20px;
-  padding-top: 40px;  /* Add internal spacing */
+  padding-top: 40px;  
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin-top: 80px; /* Increase top margin */
-  position: relative;
+  margin-top: 80px; 
+   position: relative; 
 }
 
-
-/* Title */
 .title {
   font-size: 28px;
   font-weight: bold;
@@ -42,7 +37,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Upload Area */
 .upload-area {
   width: 100%;
   height: 150px;
@@ -63,7 +57,6 @@ body {
   background: #e0e0e0;
 }
 
-/* Upload Text */
 .upload-text {
   font-size: 16px;
   color: #007bff;
@@ -79,7 +72,6 @@ body {
   margin-top: 10px;
 }
 
-/* Summary Type Selection */
 .summary-options {
   display: flex;
   flex-direction: column;
@@ -102,7 +94,6 @@ body {
   margin-bottom: 15px;
 }
 
-/* Upload Button */
 .upload-button {
   background-color: #ff3e6c;
   color: white;
@@ -123,8 +114,6 @@ body {
   cursor: not-allowed;
 }
 
-
-/* Summary Section */
 .summary-section {
   text-align: left;
   margin-top: 20px;
@@ -140,8 +129,6 @@ body {
   word-wrap: break-word; /* Ensure long words wrap */
 }
 
-
-/* Summary Text */
 .summary-text {
   background: #eef;
   padding: 10px;
@@ -153,8 +140,6 @@ body {
   overflow-wrap: break-word; /* Prevents text overflow */
 }
 
-
-/* Questions Section */
 .questions-section {
   text-align: left;
   margin-top: 20px;
@@ -164,7 +149,6 @@ body {
   border-radius: 8px;
 }
 
-/* Subtitle */
 .subtitle {
   font-size: 18px;
   font-weight: bold;
@@ -172,13 +156,11 @@ body {
   margin-bottom: 10px;
 }
 
-/* Bullet Points for Questions */
 .question-list {
   list-style-type: disc;
   padding-left: 20px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .container {
     width: 90%;
